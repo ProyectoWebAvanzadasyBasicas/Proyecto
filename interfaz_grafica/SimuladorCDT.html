@@ -21,40 +21,39 @@
        <script type="text/javascript">
             function Calcular_CDT(){
           var valorinversion=document.getElementById("valori").value;
-          var unidadplazo=document.getElementById("plazo").value;
-          var plazo= document.getElementById("pla").value;
-          var fechaexpedicion= document.getElementById("fechae").value;
-          var fechavencimiento= document.getElementById("fechav").value;
-          var tasa= document.getElementById("tasai").value;
+          var unidadplazo=document.getElementById("pla").value;
+          var plazo= document.getElementById("plazo").value;
+              var fechaexpedicion= document.getElementById("fechae").value;
+              var fechavencimiento= document.getElementById("fechav").value;
+              var tasa= document.getElementById("tasai").value;
+          if(valorinversion > 1000000 && plazo >30 && tasa < 3){
+                   alert("Ingrese un Valores correctos para calcular el CDT");
+          }
+          else{
+              
           if (valorinversion == undefined && unidadplazo == undefined && plazo == undefined && fechaexpedicion == undefined && fechavencimiento == undefined && tasa == undefined) {
            alert("Ingrese los campos mencionados \n para poder calcular el cdt ");
-           
+ 
+
+          }
+          var unidadplazo=document.getElementById("plazo").value;
+                    
         // window.open("http://www.w3schools.com/");
 }
 else {
       
        
-  alert("Login Fallido. \n Por favor inténtelo de nuevo.");
+  alert("Calculo erroneo. \n Verifique los datos ingresados.");
 }         
         }
-        function Retornar(){
-            location.href = "Servicios.html";
-            
-        }
-            
+
+        
             
             
             
             
         </script>
-         <script type="text/javascript">
-          function Retornar(){
-                location.href = "Servicios.html";
-                
-                
-            }
-
-         </script>
+         
     
     <!--[if lt IE 9]>
     <script type="text/javascript" src="js/html5.js"></script>
@@ -115,7 +114,7 @@ else {
               <input type="text" placeholder="tasa" id="tasai" class="form-control">
             </div><br /> <br />
             <button type="submit"  onclick="Calcular_CDT()" class="btn btn-success">Calcular CDT</button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<button type="submit" onclick="Retornar()"class="btn btn-success">Regresar </button> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<button type="submit" class="btn btn-success"><a href="Servicios.html">Regresar </a></button> 
           </form>
           
       </div>
@@ -128,10 +127,11 @@ else {
     
 <!--content end-->
 <!--footer -->
+      <br /><br />
       <footer>
-        
+        <center>
         Simulador Financiero &copy; 2014 <br>Todos los derechos reservados<br>
-        <!-- {%FOOTER_LINK} -->
+        <!-- {%FOOTER_LINK} --></center>
       </footer>
 <!--footer end-->
     </div>
