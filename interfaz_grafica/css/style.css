@@ -17,14 +17,13 @@ a {color:#5f870e;text-decoration:none;outline:none}
 a:hover {color:#fff}
 h1 {padding:39px 0 0 9px;float:left}
 h2 {font-size:33px;color:#fff;font-weight:700;line-height:1.2em;padding:30px 0 11px 0;letter-spacing:-1px}
-h3 {font-size:27px;color:#fff;font-weight:700;line-height:1.2em;padding:33px 0 17px 0;letter-spacing:-1px}
 h3.color1 {padding:0 0 7px 0}
 p {padding-bottom:24px}
 /* ============================= header ====================== */
 header {height:179px}
 #page1 header {height:662px}
 #logo {display:block;text-indent:-9999px;background:url(../images/logo.png) 0 0 no-repeat;width:800px;height:90px}
-#search {float:right;padding:50px 10px 0 0;margin-right:900px }
+#search {float:right;padding:50px 10px 0 0;margin-right:900px;position: absolute; top: 20%; left: 45%}
 #search .bg {background:url(../images/search.png) 0 0 no-repeat;width:220px;height:23px}
 #search .input {background:none;padding:3px 13px;font:14px Arial, Helvetica, sans-serif;color:#000;height:17px;width:194px;margin:0}
 #menu  {padding-top:30px}

@@ -16,16 +16,29 @@
 		<script type="text/javascript" src="js/tms_presets.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 		<script type="text/javascript" src="js/atooltip.jquery.js"></script>
-		<!--[if lt IE 9]>
-		<script type="text/javascript" src="js/html5.js"></script>
-		<link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
-		<![endif]-->
-		<!--[if lt IE 7]>
-			<div style=' clear: both; text-align:center; position: relative;'>
-				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a>
-			</div>
-		<![endif]-->
+		<script type="text/javascript">
+        username = new Array("sergio@gmail.com","jordan@gmail.com","andrew@gmail.com","u4@gmail.com","u5@gmail.com","u6@gmail.com","u7@gmail.com","u8@gmail.com","u9@gmail.com","u10@gmail.com","temporary@gmail.com");
+        password = new Array("sb1234","jc5678","ar9012","p4","p5","p6","p7","p8","p9","p10","user");
+
+        function Validar_Usuario(){
+          var usuario=document.getElementById("email").value;
+          var contraseña=document.getElementById("contraseña").value;
+
+          if (usuario == username[0] && contraseña == password[0] || usuario == username[1] && contraseña == password[1] || usuario == username[2] && contraseña == password[2] || usuario == username[3] && contraseña == password[3] || usuario == username[4] && contraseña == password[4] || usuario == username[5] && contraseña == password[5] || usuario == username[6] && contraseña == password[6] || usuario == username[7] && contraseña == password[7] || usuario == username[8] && contraseña == password[8] || usuario == username[9] && contraseña == password[9] || usuario == username[10] && contraseña == password[10]) {
+           window.location='Servicios.html';
+           alert("Login Exitoso. \n Bienvenido a nuestro simulador financiero.");
+           //window.location.href = 'http://www.w3schools.com/';
+           //window.open("http://www.w3schools.com/");
+}
+else {
+  alert("Login Fallido. \n Por favor inténtelo de nuevo.");
+}         
+        }                     
+</script>
 	</head>
+	<style>
+	        h4{text-align:left; font:bold 22px; font-family: "Comic Sans MS", cursive, sans-serif; color: gray;}
+	</style>
 	<body id="page1">
 		<div class="main">
 <!--header -->
@@ -44,21 +57,18 @@
 				<form id="search" method="post">
 					<h3>Iniciar Sesión</h3>
 						 <div class="form-group">
-                              <input type="text" placeholder="Email" class="form-control">
-                         </div>
-                         <div class="form-group">
-                              <input type="password" placeholder="Password" class="form-control"><br /><br />
-                         </div>
-                              <button type="submit" class="button1">Iniciar Sesión</button> <br /><br />
-					</form>
-					<div class="wrapper">
-						<div class="col2 marg_right1">
-							
-							<h4>Si no tiene cuenta por favor Registrese</h4>			
-							<a href="#" class="button1">Registrarse</a>
+              <input type="text" placeholder="Email"  id="email" class="form-control"> <br>
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" id="contraseña" class="form-control"><br><br>
+            </div>
+            <center><button type="submit" class="button1" onclick="Validar_Usuario()">Iniciar Sesion</button></center><br><br>
+            <div class="form-control">
+							<h4> <center>Si no tiene cuenta por favor Registrese</center></h4><br>			
+							<center><a href="Registro.html" class="button1">Registrarse</a></center>
 						</div>
 						
-					</div>
+					</form>
 			</header>
 <!--header end-->
 <!--content -->
@@ -68,7 +78,7 @@
 <!--footer -->
 			<footer>
 				
-				Simulador Financiero &copy; 2014 <br>Todos los derechos reservados<br>
+				<center>Simulador Financiero &copy; 2014 <br>Todos los derechos reservados<br></center> 
 				<!-- {%FOOTER_LINK} -->
 			</footer>
 <!--footer end-->

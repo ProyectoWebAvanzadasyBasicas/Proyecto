@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registrarse</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery-1.6.js" ></script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>  
+    <script type="text/javascript" src="js/Vegur_300.font.js"></script>
+    <script type="text/javascript" src="js/PT_Sans_700.font.js"></script>
+    <script type="text/javascript" src="js/PT_Sans_400.font.js"></script>
+    <script type="text/javascript" src="js/tms-0.3.js"></script>
+    <script type="text/javascript" src="js/tms_presets.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/atooltip.jquery.js"></script>
+	<script type="text/javascript">
+
+    function Registrar (){
+    	var n = document.getElementById("nombre").value;
+    	var a = document.getElementById("apellido").value;
+    	var c = document.getElementById("correo").value;
+    	var p1 = document.getElementById("contra1").value;
+    	var p2 = document.getElementById("contra2").value;
+      if(n==undefined || a ==undefined || c == undefined || p1==undefined || p2==undefined ){
+    	      alert("Error, Tiene que llenar el formulario completo.");
+    }
+    else{
+      if(p1==p2){
+        var pvalido=p1;
+      alert(n + a + c + pvalido);
+      alert("Registro Exitoso");
+      location.href = 'index.html';
+      }
+      else{
+        alert("Error, las contraseñas no coinciden");
+        alert("Registro Fallido");
+        location.reload();
+      }
+    }
+
+    }
+
+	</script>
+</head>
+<style type="text/css">
+	
+	p{text-align:left; font:bold 16px; font-family: "Sans-serif", arial, sans-serif; color: white;}
+	#Datos{width: 800px;height: 60%; position: absolute; top: 120%; left: 40%;}
+	input {
+width:300px;
+height:30px ;
+border:1px;
+background:#F8F8F8;
+text-align:left;
+vertical-align: middle;
+margin-top: -1px;
+font:bold 14px arial, sans-serif;
+   }
+.button {
+   border: 5px solid #013957;
+   background: #13a10f;
+   background: -webkit-gradient(linear, left top, left bottom, from(#17a2ff), to(#13a10f));
+   background: -webkit-linear-gradient(top, #13a10f, #13a10f);
+   background: -moz-linear-gradient(top, #13a10f, #13a10f);
+   background: -ms-linear-gradient(top, #13a10f, #13a10f);
+   background: -o-linear-gradient(top, #13a10f, #13a10f);
+   background-image: -ms-linear-gradient(top, #13a10f 0%, #13a10f 100%);
+   padding: 16.5px 33px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #ffffff;
+   font-size: 24px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border: 5px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #3e779d;
+   background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
+   background: -webkit-linear-gradient(top, #65a9d7, #3e779d);
+   background: -moz-linear-gradient(top, #65a9d7, #3e779d);
+   background: -ms-linear-gradient(top, #65a9d7, #3e779d);
+   background: -o-linear-gradient(top, #65a9d7, #3e779d);
+   background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+   color: #fff;
+   }
+.button:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 5px solid #0a3c59;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#3e779d));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+   color: #fff;
+   }
+</style>
+
+<body bgcolor= "#383838">
+  <div class="main">
+  <header>
+    <div class="wrapper">
+          <h1><a href="index.html" id="logo">Simulador Financiero</a></h1>
+ </div>
+ <nav>
+          <ul id="menu">
+            <li class="active"><a href="Registro.html"><span>Registro</span></a></li>
+          </ul>
+        </nav>
+  <div id="Datos">
+  <h2>Datos de Registro</h2>
+  <p>Nombres<br><br><input id="nombre" type="text"></p>
+  <p>Apellidos<br><br><input id="apellido" type="text"></p>
+  <p>Correo Electrónico<br><br><input id="correo" type="text"></p>
+  <p>Contraseña<br><br><input id="contra1" type="password"></p>
+  <p>Confirme su Contraseña<br><br><input id="contra2" type="password"></p>
+  <br>
+  <a href='#' class='button' onclick="Registrar()">Registrarse</a><br></br>
+  <footer>
+        Simulador Financiero &copy; 2014 <br> Todos los derechos reservados
+      </footer>
+</div>
+</header>
+</div> 
+</body>
+</html>
