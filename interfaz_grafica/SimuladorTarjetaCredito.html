@@ -1,60 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Simulador Tarjeta de Credito</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-		<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
-		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-		<script type="text/javascript" src="js/jquery-1.6.js" ></script>
-		<script type="text/javascript" src="js/cufon-yui.js"></script>
-		<script type="text/javascript" src="js/cufon-replace.js"></script>  
-		<script type="text/javascript" src="js/Vegur_300.font.js"></script>
-		<script type="text/javascript" src="js/PT_Sans_700.font.js"></script>
-		<script type="text/javascript" src="js/PT_Sans_400.font.js"></script>
-		<script type="text/javascript" src="js/tms-0.3.js"></script>
-		<script type="text/javascript" src="js/tms_presets.js"></script>
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" src="js/atooltip.jquery.js"></script>
-         <script type="text/javascript">
-          function Retornar(){
-                location.href = "Servicios.html";
-                
-                
-            }
+<head>
+  <meta charset="UTF-8">
+  <title>Registrarse</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery-1.6.js" ></script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>  
+    <script type="text/javascript" src="js/Vegur_300.font.js"></script>
+    <script type="text/javascript" src="js/PT_Sans_700.font.js"></script>
+    <script type="text/javascript" src="js/PT_Sans_400.font.js"></script>
+    <script type="text/javascript" src="js/tms-0.3.js"></script>
+    <script type="text/javascript" src="js/tms_presets.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/atooltip.jquery.js"></script>
+    <script type="text/javascript" src="js/Registro.js"></script>
+</head>
+<style type="text/css">
+  p{text-align:left; font:bold 16px; font-family: "Sans-serif", arial, sans-serif; color: white;}
+  #Datos{width: 800px;height: 60%; position: absolute; top: 120%; left: 40%;}
+  input {
+width:300px;
+height:30px ;
+border:1px;
+background:#F8F8F8;
+text-align:left;
+vertical-align: middle;
+margin-top: -1px;
+font:bold 14px arial, sans-serif;
+   }
+.button {
+   border: 5px solid #013957;
+   background: #13a10f;
+   background: -webkit-gradient(linear, left top, left bottom, from(#17a2ff), to(#13a10f));
+   background: -webkit-linear-gradient(top, #13a10f, #13a10f);
+   background: -moz-linear-gradient(top, #13a10f, #13a10f);
+   background: -ms-linear-gradient(top, #13a10f, #13a10f);
+   background: -o-linear-gradient(top, #13a10f, #13a10f);
+   background-image: -ms-linear-gradient(top, #13a10f 0%, #13a10f 100%);
+   padding: 16.5px 33px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #ffffff;
+   font-size: 24px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border: 5px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #3e779d;
+   background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
+   background: -webkit-linear-gradient(top, #65a9d7, #3e779d);
+   background: -moz-linear-gradient(top, #65a9d7, #3e779d);
+   background: -ms-linear-gradient(top, #65a9d7, #3e779d);
+   background: -o-linear-gradient(top, #65a9d7, #3e779d);
+   background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+   color: #fff;
+   }
+.button:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 5px solid #0a3c59;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#3e779d));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+   color: #fff;
+   }
+</style>
 
-         </script>
-		
-		<!--[if lt IE 9]>
-		<script type="text/javascript" src="js/html5.js"></script>
-		<link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
-		<![endif]-->
-		<!--[if lt IE 7]>
-			<div style=' clear: both; text-align:center; position: relative;'>
-				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a>
-			</div>
-		<![endif]-->
-	</head>
-	<body id="page1">
-		<div class="main">
-<!--header -->
-			<header>
-				<div class="wrapper">
-					<h1><a href="Servicios.html" id="logo">Simulador Tarjeta de Credito</a></h1>
-					
-				</div>
-				<nav>
-					<ul id="menu">
-						<li class="active"><a href="Servicios.html"><span>Tarjeta de credito</span></a></li>
-					
-					</ul>
-				</nav>
-				
-				<div class="container" >
-        <center><h3>Entradas de datos</h3></center>
-          <form id="search" method="post">
-               
-            <div class="form-group" id="alineacion">
+<body bgcolor= "#383838">
+  <div class="main">
+  <header>
+    <div class="wrapper">
+          <h1><a href="Inicio.html" id="logo">Simulador Financiero</a></h1>
+ </div>
+ <nav>
+          <ul id="menu">
+            <li class="active"><a href="Servicios.html"><span>Simulador T. Credito</span></a></li>
+          </ul>
+        </nav>
+  <div id="Datos">
+  <h2>Entrada de Datos</h2>
+  <div class="form-group" id="alineacion">
                <h4>Valor de Compra:</h4>       
               <input type="text" placeholder="compra" id="compra"class="form-control">
             </div><br />
@@ -79,32 +118,19 @@
   <option value="mes">34 meses</option>
   <option value="mes">36 meses</option>
 </select>
-            </div><br />
-             <div class="form-group">
+            </div>
+            <div class="form-group">
                  <h4>Tasa de interes Mensual %:</h4>*averigue en la tasa de la entidad financiera  <br />     
               <input type="text" placeholder="compra" id="tasa"class="form-control">
-            </div><br />     
-                  <br />
-                
-            <button type="submit"  onclick="Calcular_CDT()" class="btn btn-success">Calcular Credito</button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<button type="submit" onclick="Retornar()"class="btn btn-success">Regresar </button> 
-          </form>
-      </div>
-			</header>
-<!--header end-->
-<!--content -->
-			
-		
-<!--content end-->
-<!--footer -->
-			<footer>
-				
-				Simulador Financiero &copy; 2014 <br>Todos los derechos reservados<br>
-				<!-- {%FOOTER_LINK} -->
-			</footer>
-<!--footer end-->
-		</div>
-		<script type="text/javascript"> Cufon.now(); </script>
-		
-	</body>
+            </div><br />  
+  <br>
+  <a href='#' class='button' onclick="Calcular_CDT()">Calcular Credito</a><br></br><br /><br />
+           <a class='button' href="Servicios.html">Regresar</a><br></br> 
+  <footer>
+        Simulador Financiero &copy; 2014 <br> Todos los derechos reservados
+      </footer>
+</div>
+</header>
+</div> 
+</body>
 </html>
