@@ -16,37 +16,9 @@
     <script type="text/javascript" src="js/tms_presets.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/atooltip.jquery.js"></script>
-	<script type="text/javascript">
-
-    function Registrar (){
-    	var n = document.getElementById("nombre").value;
-    	var a = document.getElementById("apellido").value;
-    	var c = document.getElementById("correo").value;
-    	var p1 = document.getElementById("contra1").value;
-    	var p2 = document.getElementById("contra2").value;
-      if(n==undefined || a ==undefined || c == undefined || p1==undefined || p2==undefined ){
-    	      alert("Error, Tiene que llenar el formulario completo.");
-    }
-    else{
-      if(p1==p2){
-        var pvalido=p1;
-      alert(n + a + c + pvalido);
-      alert("Registro Exitoso");
-      location.href = 'index.html';
-      }
-      else{
-        alert("Error, las contraseñas no coinciden");
-        alert("Registro Fallido");
-        location.reload();
-      }
-    }
-
-    }
-
-	</script>
+	  <script type="text/javascript" src="js/Registro.js"></script>
 </head>
 <style type="text/css">
-	
 	p{text-align:left; font:bold 16px; font-family: "Sans-serif", arial, sans-serif; color: white;}
 	#Datos{width: 800px;height: 60%; position: absolute; top: 120%; left: 40%;}
 	input {
@@ -112,7 +84,7 @@ font:bold 14px arial, sans-serif;
   <div class="main">
   <header>
     <div class="wrapper">
-          <h1><a href="index.html" id="logo">Simulador Financiero</a></h1>
+          <h1><a href="Inicio.html" id="logo">Simulador Financiero</a></h1>
  </div>
  <nav>
           <ul id="menu">
