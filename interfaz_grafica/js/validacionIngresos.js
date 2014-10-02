@@ -7,18 +7,20 @@ function valida_envia(validaEntero){
    document.valida.numeros.focus() 
    return 0;    
  }else{ 
-   if (numeros==1 || numeros==12 ||numeros==123){ 
-    alert("digite bn los numeros es invalido") 
+   if (numeros<50000){
+   alert(" no puede meter menos de 50 mil pesos")
     document.valida.numeros.focus() 
     return 0; 
   }
+  
 } 
 if (numeros==""){ 
  alert("Tiene que introducir un valor") 
  document.valida.numeros.focus() 
  return 0; 
 } 
-alert(" gracias esta guardado base de datos"); 
+if (numeros>50000){
+ alert(" gracias esta guardado base de datos"); 
 document.valida.submit(); 
-
+}
 }
