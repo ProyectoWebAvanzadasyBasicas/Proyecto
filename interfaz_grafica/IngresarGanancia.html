@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/styleGastos.css" type="text/css" media="all">
+	<script type="text/javascript" src="js/jquery-1.6.js" ></script>
+	<script type="text/javascript" src="js/cufon-yui.js"></script>
+	<script type="text/javascript" src="js/cufon-replace.js"></script>  
+	<script type="text/javascript" src="js/Vegur_300.font.js"></script>
+	<script type="text/javascript" src="js/PT_Sans_700.font.js"></script>
+	<script type="text/javascript" src="js/PT_Sans_400.font.js"></script>
+	<script type="text/javascript" src="js/atooltip.jquery.js"></script>
+	<script type="text/javascript" src="js/validacionIngresos.js"></script>
+	<script type="text/javascript" src="js/jqueryvalidacion.jquery.js"></script>
+</head>
+<body id="page4">
+	<div class="main">
+		<header>
+			<div class="wrapper">
+				<h1><a href="Servicios.html" id="logo">Simulador Financiero</a></h1>
+
+			</div>
+			<nav>
+				<ul id="menu">
+
+					<li class="active"><a href="Servicios.html"><span>Ingresar Ganancia</span></a></li>
+				</ul>
+			</nav>
+		</header>
+		<article id="content"><div class="ic">More Website Templates @ TemplateMonster.com - November 14, 2011!</div>
+			<div class="wrapper">
+				<h2>¿Mensual o Quincena?</h2>
+
+			</body>
+
+			<div class="col1 marg_right1">
+
+			</div>
+			<div class="wrapper">
+				<figure class="left marg_right2"></figure>
+				<form name="valida" >
+					<div id="valida" class="letra">Mensual</div>
+					<div id="valida1" class="letra1">Quincena</div>
+					<input type="text" id="caja" class="letra2" name="numeros" size="10" maxlength="8">
+					<!--<input type="text" id="caja1" class="letra2" name="numeros" size="10" maxlength="8">-->
+					<input  type="button"id="button1" class="letra3"   value="Guardar" onclick="valida_envia()"/>
+
+					
+				</div>
+				</form>
+
+				<div id="slide">
+				<div class="img"><img src="images/gastos.png"/></div>
+					<div class="img"><img src="images/gastos1.png"/></div>
+					<div class="img"><img src="images/gastos3.png"/></div>
+				</div>
+				
+				<footer>
+
+					Simulador Financiero &copy; 2014 <br> Todos los derechos reservados
+				</footer>
+
+		</div>
+			
+			<script type="text/javascript"> Cufon.now(); </script>
+			<script>
+			$(function(){
+    $('#slide div:gt(0)').hide();
+    setInterval(function(){
+      $('#slide div:first-child').fadeOut(0)
+         .next('div').fadeIn(1000)
+         .end().appendTo('#slide');}, 4000);
+});</script>
+		</body>
+		</html>

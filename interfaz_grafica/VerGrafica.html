@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/styleGastos.css" type="text/css" media="all">
+	<script type="text/javascript" src="js/jquery-1.6.js" ></script>
+	<script type="text/javascript" src="js/cufon-yui.js"></script>
+	<script type="text/javascript" src="js/cufon-replace.js"></script>  
+	<script type="text/javascript" src="js/Vegur_300.font.js"></script>
+	<script type="text/javascript" src="js/PT_Sans_700.font.js"></script>
+	<script type="text/javascript" src="js/PT_Sans_400.font.js"></script>
+	<script type="text/javascript" src="js/atooltip.jquery.js"></script>
+	<script type="text/javascript" src="js/validacionIngresos.js"></script>
+	<script type="text/javascript" src="js/jqueryvalidacion.jquery.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+<script>
+   google.load("visualization", "1", {packages:["corechart"]});
+   google.setOnLoadCallback(dibujarGrafico);
+   function dibujarGrafico() {
+     // Tabla de datos: valores y etiquetas de la gráfica
+     var data = google.visualization.arrayToDataTable([
+       ['Mesual', 'Mensual'],
+       ['Enero', 20.21],
+       ['Febrero', 4.28],
+       ['Marzo', 17.26],
+       ['Abril', 17.11],
+       ['Mayo', 10.14],
+       ['Junio', 10.18],
+       ['Julio', 10.2],
+       ['Agosto', 10.15],
+       ['septiembre', 17.12],
+       ['Octubre', 17.26],
+       ['Novimebre', 17.6],
+       ['Dicimebre', 17.16]    
+     ]);
+     var options = {
+       title: ''
+     }
+     // Dibujar el gráfico
+     new google.visualization.ColumnChart( 
+     //ColumnChart sería el tipo de gráfico a dibujar
+       document.getElementById('GraficoGoogleChart-ejemplo-1')
+     ).draw(data, options);
+   }
+ </script> 
+	
+</head>
+<body id="page4">
+	<div class="main">
+		<header>
+			<div class="wrapper">
+				<h1><a href="Servicios.html" id="logo">Simulador Financiero</a></h1>
+
+			</div>
+			<nav>
+				<ul id="menu">
+
+					<li class="active"><a href="Servicios.html"><span>Ver Grafica</span></a></li>
+				</ul>
+			</nav>
+		</header>
+		<article id="content"><div class="ic">More Website Templates @ TemplateMonster.com - November 14, 2011!</div>
+			<div class="wrapper">
+				<div id="GraficoGoogleChart-ejemplo-1" style="width: 800px; height: 600px">
+</div>
+					
+				</div>
+				<footer>
+
+					Simulador Financiero &copy; 2014 <br> Todos los derechos reservados
+				</footer>
+
+		</div>
+			
+			<script type="text/javascript"> Cufon.now(); </script>
+		</body>
+		</html>

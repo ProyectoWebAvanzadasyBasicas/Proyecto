@@ -25,9 +25,10 @@
           var contraseña=document.getElementById("contraseña").value;
 
           if (usuario == username[0] && contraseña == password[0] || usuario == username[1] && contraseña == password[1] || usuario == username[2] && contraseña == password[2] || usuario == username[3] && contraseña == password[3] || usuario == username[4] && contraseña == password[4] || usuario == username[5] && contraseña == password[5] || usuario == username[6] && contraseña == password[6] || usuario == username[7] && contraseña == password[7] || usuario == username[8] && contraseña == password[8] || usuario == username[9] && contraseña == password[9] || usuario == username[10] && contraseña == password[10]) {
-           window.location='Servicios.html';
+          
            alert("Login Exitoso. \n Bienvenido a nuestro simulador financiero.");
            //window.location.href = 'http://www.w3schools.com/';
+            window.location.href="Servicios.html";
            //window.open("http://www.w3schools.com/");
 }
 else {
@@ -44,12 +45,12 @@ else {
 <!--header -->
 			<header>
 				<div class="wrapper">
-					<h1><a href="index.html" id="logo">Simulador Financiero</a></h1>
+					<h1><a  id="logo">Simulador Financiero</a></h1>
 					
 				</div>
 				<nav>
 					<ul id="menu">
-						<li class="active"><a href="index.html"><span>Inicio</span></a></li>
+						<li class="active"><a ><span>Inicio</span></a></li>
 					
 					</ul>
 				</nav>
