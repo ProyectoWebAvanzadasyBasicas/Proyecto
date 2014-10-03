@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registrarse</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery-1.6.js" ></script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>  
+    <script type="text/javascript" src="js/Vegur_300.font.js"></script>
+    <script type="text/javascript" src="js/PT_Sans_700.font.js"></script>
+    <script type="text/javascript" src="js/PT_Sans_400.font.js"></script>
+    <script type="text/javascript" src="js/tms-0.3.js"></script>
+    <script type="text/javascript" src="js/tms_presets.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/atooltip.jquery.js"></script>
+	  <script type="text/javascript" src="js/VerAhorros.js"></script>
+</head>
+<style type="text/css">
+	p{text-align:left; font:bold 16px; font-family: "Sans-serif", arial, sans-serif; color: darkgray;float:right;}
+	#Datos{width: 500px;height: 60%; position: absolute; top: 120%; left: 30%;}
+	#txtarea {
+width:500px;
+height:300px ;
+border:4px;
+background:gray;
+text-align:left;
+vertical-align: middle;
+margin-top: -1px;
+font:bold 14px arial, sans-serif;
+color: white;
+   }
+</style>
+
+<body bgcolor= "#383838" onload="Listar_Ahorros();">
+  <div class="main">
+  <header>
+    <div class="wrapper">
+          <h1><a href="Servicios.html" id="logo">Simulador Financiero</a></h1>
+ </div>
+ <nav>
+          <ul id="menu">
+            <li class="active"><a href="Ahorros.html"><span>Ver Ahorros</span></a></li>
+          </ul>
+        </nav>
+  <div id="Datos">
+  <h2>Simulador de Ahorros</h2>
+  <textarea id="txtarea" ></textarea>
+  <br>
+  <p><b>Para calcular el ahorro, se toma la ganancia ingresada al sistema, y se le descuenta la cuota de manejo (Puede variar de acuerdo a la entidad financiera que usted elija), que para nuestro simulador, promediamos en $8000 pesos colombianos.<br> Si usted ingresó ganancias mayores a $8'000.000 de pesos, a este monto, se le aplica el 4 por mil, impuesto obligatorio en Colombia, que matemáticamente se puede expresar como el 4% de su monto (Por cada mil pesos que retire, cuatro pesos se destinan al pago de este impuesto)</b></p>
+  <br>
+  <br>
+  <footer>
+        Simulador Financiero &copy; 2014 <br> Todos los derechos reservados
+      </footer>
+</div>
+</header>
+</div> 
+</body>
+</html>
