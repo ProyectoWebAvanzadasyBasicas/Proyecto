@@ -12,7 +12,7 @@
         var pvalido=p1;
       alert(n + a + c + pvalido);
       alert("Registro Exitoso");
-      location.href = 'Inicio.html';
+      location.href = 'Index.html';
       }
       else{
         alert("Error, las contraseñas no coinciden");
