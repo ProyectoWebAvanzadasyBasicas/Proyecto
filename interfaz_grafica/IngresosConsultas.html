@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registrarse</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery-1.6.js" ></script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>  
+    <script type="text/javascript" src="js/Vegur_300.font.js"></script>
+    <script type="text/javascript" src="js/PT_Sans_700.font.js"></script>
+    <script type="text/javascript" src="js/PT_Sans_400.font.js"></script>
+    <script type="text/javascript" src="js/tms-0.3.js"></script>
+    <script type="text/javascript" src="js/tms_presets.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/atooltip.jquery.js"></script>
+	<script type="text/javascript">
+      $(document).ready(function(){
+          $('#primercampo').hide();
+          $(".show1").click(function () {  
+          $('#primercampo').show();
+          
+           });
+      });
+	</script>
+	<script type="text/javascript">
+      $(document).ready(function(){
+          $('#segundocampo').hide();
+          $(".show2").click(function () {  
+          $('#segundocampo').show();
+           });
+      });
+	</script>
+</head>
+<style type="text/css">
+	p{text-align:left; font:bold 16px; font-family: "Sans-serif", arial, sans-serif; color: darkgray;float:right;}
+	#Datos{width: 500px;height: 60%; position: absolute; top: 120%; left: 30%;}
+	#txtarea {
+width:500px;
+height:300px ;
+border:4px;
+background:gray;
+text-align:left;
+vertical-align: middle;
+margin-top: -1px;
+font:bold 14px arial, sans-serif;
+color: white;
+   }
+.ingresos{
+margin-left: -400px;
+
+}   
+.consultas{
+margin-left: -400px;
+
+}
+
+</style>
+
+<body bgcolor= "#383838" >
+  <div class="main">
+  <header>
+    <div class="wrapper">
+          <h1><a href="Servicios.html" id="logo">Simulador Financiero</a></h1>
+ </div>
+ <nav>
+          <ul id="menu">
+            <li class="active"><a href="IngresosConsultas.html"><span>Ingresos y Consultas</span></a></li>
+          </ul>
+        </nav>
+  <div id="Datos">
+  <h2>Ingresos y Consultas</h2>
+   
+  <br>
+  <div class="ingresos">
+  
+  <left class="mostrar1"><a class="show1">Ingresar Ganancia</a></left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <left id="primercampo" ><input id="ganancia"  type="number" /></left> 
+  <br>
+  <br>
+  <left ><a class="show2">Ingresar Gastos</a></left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <left id="segundocampo" ><input id="gastos"  type="number" /> </left>
+  </div>
+   <br>
+   <br>
+  
+  <br>
+  <br>
+  <div class="consultas">
+   <right><a class="showahorros">Ver Ahorros</a></right>
+  <br>
+  <br>
+  <right><a class="showmovimientos">Ver Movimientos</a></right>
+  <br>
+  <br>
+  <right><a class="showgrafica">Ver Grafica</a></right>
+  </div>
+  <br>
+  <br>
+  
+  <footer>
+        Simulador Financiero &copy; 2014 <br> Todos los derechos reservados
+      </footer>
+</div>
+</header>
+</div> 
+</body>
+</html>
